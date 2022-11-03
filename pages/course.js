@@ -8,10 +8,10 @@ export default function Course() {
         <div className={styles.wrapper_1}>
             <div className={styles.student}>
                 <h3>Чему вы научитесь</h3>
-                <p><img width={12} height={12} src='/img/checkmark.png' alt='check' />Базовые знания: Что такое криптовалюта, блокчейн и как это работает?</p>
-                <p><img width={12} height={12} src='/img/checkmark.png' alt='check' />Уникальные схемы по заработку на арбитраже криптовалюты.</p>
-                <p><img width={12} height={12} src='/img/checkmark.png' alt='check' />Работа с ведущими криптовалютными биржами.</p>
-                <p><img width={12} height={12} src='/img/checkmark.png' alt='check' />Как обезопасить себя от мошенников и защитить свои данные.</p>
+                <p><img width={12} height={12} src='/checkmark.png' alt='check' />Базовые знания: Что такое криптовалюта, блокчейн и как это работает?</p>
+                <p><img width={12} height={12} src='/checkmark.png' alt='check' />Уникальные схемы по заработку на арбитраже криптовалюты.</p>
+                <p><img width={12} height={12} src='/checkmark.png' alt='check' />Работа с ведущими криптовалютными биржами.</p>
+                <p><img width={12} height={12} src='/checkmark.png' alt='check' />Как обезопасить себя от мошенников и защитить свои данные.</p>
             </div>
             <div className={styles.description}>
             <h1>Описание</h1>

@@ -4,6 +4,7 @@ import { useDispatch, useSelector } from "react-redux";
 import { setAuthState } from "../store/authSlice";
 
 export default function Layout({children}) {
+    const [click, setClick] = useState(false);
     const state = useSelector(state => state.cb.cb)
     const dispatch = useDispatch();
     console.log(state)
@@ -15,9 +16,33 @@ export default function Layout({children}) {
     },[])
     return(
         <>
-        <head>
-        </head>
         <header>
+            <div className="header_mob">
+                <button onClick={() => setClick(true)} className="header_button_mob"><img src="/Hamburger_icon.png" width={30}/></button>
+            </div>
+            <div style={click ? {left: 0} : {}} className="navbar_mob">
+                <button onClick={() => setClick(false)} className="close"><img src="/close.png" width={30}/></button>
+                <ul>
+                    <li>
+                        <Link href='/'>Курсы банков</Link>
+                    </li>
+                    <li>
+                        <Link href="">Связки</Link>
+                    </li>
+                    <li>
+                        <Link href="/exchanges">Биржи</Link>
+                    </li>
+                    <li>
+                        <Link href="/course">Курс</Link>
+                    </li>
+                    <li>
+                        <Link href="/calc">Калькулятор</Link>
+                    </li>
+                    <li>
+                        <Link href="/faq">FAQ</Link>
+                    </li>
+                </ul>
+            </div>
             <div className="header">
                 <p>ЦБ РФ USD: <span>{state.USD.Value}</span></p>
                 <p>ЦБ РФ EUR: <span>{state.EUR.Value}</span></p>

@@ -147,3 +147,52 @@ body {
   .footer_2 > a:hover{
     color: #284563;
   }
+  .header_mob{
+    display: none;
+    background: #FFF;
+    height: 60px;
+  }
+  .navbar_mob{
+    display: none;
+    height: 100%;
+    width: 100%;
+    position: fixed;
+    z-index: 999;
+    top: 0;
+    left: -100%;
+
+    transition: 1s;
+  }
+  .header_button_mob{
+    border: none;
+    background: none;
+    cursor: pointer;
+    margin: 10px;
+  }
+  .navbar_mob > ul {
+    padding-top: 50px;
+    flex-direction: column;
+    text-align: center;
+    color: black;
+    grid-gap: 20px;
+    width: 100%;
+    background: #FFF;
+  }
+  .navbar_mob > ul > li > a {
+    color: black;
+    font-weight: 600;
+  }
+  .close{
+    border: none;
+    background: none;
+    position: absolute;
+    left: 10px;
+    top: 10px;
+    cursor: pointer;
+  }
+@media screen and (max-width: 1024px) {
+    .header{display: none;}
+    .navbar{display: none;}
+    .header_mob{display: flex;}
+    .navbar_mob{display: flex;}
+}
