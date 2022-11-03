@@ -1,0 +1,88 @@
+.container {
+    margin: 0 auto;
+    max-width: 1400px;
+  }
+.cols3 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    grid-gap: 50px;
+}
+.col {
+    border-radius: 8px;
+    background: rgb(255, 255, 255);
+    margin: 0.5%;
+    padding: 15px;
+    width: 20%;
+    min-width: 300px;
+    height: fit-content;
+    min-height: 300px;
+}
+.calcBlockCalc1 {
+    height: auto;
+    display: flex;
+    flex-direction: column;
+}
+.calcBlockCalc1 > div > input {
+    font-weight: 900;
+    font-size: 24px;
+    display: block;
+    width: 95%;
+    text-align: right;
+    border: 1px solid #aaa;
+    padding: 5px 10px;
+}
+.calcBlockCalc2 {
+    height: auto;
+    display: flex;
+    flex-direction: column;
+}
+.calcBlockCalc2 > div > input {
+    font-weight: 900;
+    font-size: 24px;
+    display: block;
+    width: 95%;
+    text-align: right;
+    border: 1px solid #aaa;
+    padding: 5px 10px;
+}
+.calcResult {
+    padding: 15px 0;
+    text-align: right;
+    font-weight: bold;
+}
+.calcBlockCalc3 {
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    text-align: right;
+    font-size: small;
+}
+.cvet {
+    background-color: rgb(240 245 250);
+}
+.calcBlockCalc3 > div > div > p > *{
+    min-width: 50px
+}
+.calcBlockCalc3 > div > div > p {
+    margin: 0;
+    padding: 5px;
+    display: flex;
+    justify-content: end;
+    grid-gap: 30px;
+}
+.calcBlockCalc3 > div > i {
+    padding:5px 10px;
+    
+}
+
+.calcBlockCalc3 > div > input {
+    font-weight: 900;
+    font-size: 24px;
+    display: block;
+    width: 95%;;
+    text-align: right;
+    border: 1px solid #aaa;
+    padding: 5px 10px;
+}

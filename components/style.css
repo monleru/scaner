@@ -1,0 +1,149 @@
+body {
+    margin: 0;
+    max-width: 1400px;
+    margin: 0 auto;
+    background: #f0f5fa;
+    font-family: 'Montserrat', sans-serif;
+    scroll-behavior: smooth;
+}
+.header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: gray;
+    width: 96%;
+    padding: 0 2%;
+    margin: 0 auto;
+    font-size: 16px;
+    font-weight: 500;
+    border-bottom: 1px solid rgba(128, 128, 128, 0.315);
+}
+.header_2{
+    border-bottom: 1px solid rgba(128, 128, 128, 0.315);
+    min-height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.navbar > ul {
+    padding: 10px 5px;
+}
+.navbar > ul > li{
+    color: black;
+    font-weight: 600;
+}
+.navbar > ul > li > a{
+    color: black;
+
+    transition: 500ms;
+}
+.navbar > ul > li > a:hover{
+    color: rgb(63, 63, 63);
+}
+.navbar{
+    border-bottom: 1px solid rgba(128, 128, 128, 0.315);
+    background: #FFF;
+    margin-bottom: 20px;
+}
+.header{
+    background: #FFF;
+}
+.header_2{
+    background: #FFF;
+}
+.footer{
+    width: 95%;
+    margin: 0 auto;
+    margin-top: 50px;
+}
+.header > p > span{
+    color: blue;
+}
+ul{
+    margin: 0;
+    display: flex;
+}
+a{
+    text-decoration: none;
+}
+ul > li{
+    list-style-type: none;
+    margin: 0 20px;
+}
+.footer_1{
+    padding: 5px 20px;
+    background: #FFF;
+}
+.footer_navbar{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 100px;
+    color: gray;
+    font-size: 12px;
+}
+.footer_navbar > ul > li > a {
+    color: gray;
+}
+.p2p_div{
+    background: #FFF;
+    width: 30%;
+    min-width: 300px;
+    border-radius: 10px;
+    margin: 10px;
+    padding: 10px;
+}
+.p2p_div > div{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.ticket_p2p{
+    color: black;
+    font-weight: 700;
+}
+.ticker_rus_p2p{
+    color: gray;
+    font-size: 14px;
+    font-weight: 600;
+}
+.main_page{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+.footer_1{
+    color: #212529;
+    border-radius: 2px;
+}
+.footer_1 > h1{
+    font-size: 30px;
+}
+.footer_1 > p {
+    font-size: 20px;
+    font-weight: 500;
+}
+.footer_2{
+    color: #212529;
+    border-radius: 2px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+.footer_2 > div >h2{
+    color: black;
+}
+.footer_2 > * {
+    max-width: 50%;
+}
+.footer_2 > a {
+    display: flex;
+    align-items: center;
+    color: #212529;
+    font-weight: 600;
+    grid-gap: 5px;
+}
+.footer_2 > a:hover{
+    color: #284563;
+}
