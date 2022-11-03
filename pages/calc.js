@@ -1,6 +1,6 @@
 import Layout from "../components/Layout";
 import React from "react";
-import styles from '../css/calc.module.css';
+import styles from '../styles/calc.module.css';
 
 export default function Calc() {
     const [num1, setNum1] = React.useState(0);

@@ -22,7 +22,7 @@ export default function Layout({children}) {
                 <p>ЦБ РФ USD: <span>{state.USD.Value}</span></p>
                 <p>ЦБ РФ EUR: <span>{state.EUR.Value}</span></p>
                 <p>ЦБ РФ CNY: <span>{state.CNY.Value}</span></p>
-                <p>ЦБ РК USD: <span>61.629</span></p>
+                <p>ЦБ РК USD: <span>61.622</span></p>
                 <p>ЦБ РК EUR: <span>61.629</span></p>
                 <p>ЦБ РК RUB: <span>61.629</span></p>
             </div>
