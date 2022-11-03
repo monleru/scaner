@@ -35,25 +35,19 @@ export default function Layout({children}) {
                         <Link href='/'>Курсы банков</Link>
                     </li>
                     <li>
-                        <Link href="">P2P</Link>
-                    </li>
-                    <li>
-                        <Link href="">Спреды</Link>
-                    </li>
-                    <li>
                         <Link href="">Связки</Link>
                     </li>
                     <li>
                         <Link href="/exchanges">Биржи</Link>
                     </li>
                     <li>
+                        <Link href="/course">Курс</Link>
+                    </li>
+                    <li>
                         <Link href="/calc">Калькулятор</Link>
                     </li>
                     <li>
                         <Link href="/faq">FAQ</Link>
-                    </li>
-                    <li>
-                        <a href="">Сервисы</a>
                     </li>
                 </ul>
             </div>
