@@ -11,36 +11,40 @@ export default function About() {
       <h1>Оплата услуг</h1>
       <table className={styles.myTable}>
         <tbody>
-          <tr>
-            <td className={styles.td_}><b>Выбор:</b></td>
-            <td className={styles.td_}>
+          <tr style={{display: 'flex', alignItems: 'center', flexWrap: 'wrap'}}>
+            <p className={styles.td_}><b>Выбор:</b></p>
+            <p className={styles.td_}>
               <div className={styles.variantsTarif}>
                 <button className={styles.btn_} style={choose === 'course' ? {border: '1px solid grey'} : {}}  onClick={() => setChoose('course')}>КУРС</button>
                 <button className={styles.btn_} style={choose === 'bundle' ? {border: '1px solid grey'} : {}}  onClick={() => setChoose('bundle')}>СВЯЗКА</button>
-                
               </div>
-            </td>
+            </p>
           </tr>
-          <tr>
-            <td><b>Стоимость:</b></td>
+          <tr style={{display: 'flex', alignItems: 'center', flexWrap: 'wrap'}}>
+            <p><b>Стоимость:</b></p>
             {choose === 'course' ?
-            <div className={styles.price}>150 USDT</div> : <div className="price">50 USDT</div>}
-
-            
+            <div className={styles.price}>100 USD</div> : <div className={styles.price}>300 USD</div>}
           </tr>
-          <tr>
-            <td><b>TRC-кошелек для оплаты:</b></td>
-            <td>
-              <div>TFeD7uRbcrdCQBi1jzkXpAExdrZGedLa3U</div>
-              <div><img width={250} height={250} src='/qr.jpg' alt='QR' /></div>
-                </td>
-                </tr>
+          <div className={styles.div_pay}>
+                <div>
+                    <img width={250} height={250} src='/qr.jpg' alt='QR' />
+                </div>
+            <p>
+                <b>TRC-кошелек для оплаты: </b>
+                <span style={{color: 'red'}}><p><b>TFeD7uRbcrdCQBi1jzkXpAExdrZGedLa3U</b></p></span>
+                <b>Ваш телеграм:</b>
+                <p><input className={styles.your_input} placeholder="@puzzle_team"/></p>
+                <b>После перевода нажмите на кнопку.</b>
+                <p><button className={styles.payed}>Я оплатил</button></p>
+            </p>
+          </div>
         </tbody>
       </table>
       <div className={styles.notice}>
         <h2>Инструкция</h2>
         <p>1. Сделайте перевод <b>USDT</b> на <b>TRC-кошелек</b>: TFeD7uRbcrdCQBi1jzkXpAExdrZGedLa3U</p>
-        <p>2. После успешного перевода, необходимо отправить скриншот оплаты на <b>ТЕЛЕГРАМ</b></p>        </div>
+        <p>2. После успешного перевода c вами свяжутся в течении 24 часов.</p>
+        <p>3. В случае вопросов обращайтесь в тех поддержку <b>@puzzle_team_support</b></p></div>
     </div>
     
   </div>
