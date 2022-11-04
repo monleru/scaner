@@ -33,7 +33,7 @@ export default function Layout({children}) {
                         <Link href="/exchanges">Биржи</Link>
                     </li>
                     <li>
-                        <Link href="/course">Курс</Link>
+                        <Link href="/course">Обучение</Link>
                     </li>
                     <li>
                         <Link href="/calc">Калькулятор</Link>

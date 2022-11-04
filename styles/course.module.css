@@ -68,27 +68,36 @@
     font-size: 25px;
     font-weight: 500;
     cursor: pointer;
-    transition: background 0.1s ease-in-out;
+
+    width: 90%;
+    margin-left: 0;
+    margin: 0 auto;
+    text-align: center;
+    height: fit-content;
+    padding: 8px 0;
+    transition: 1s;
 }
       
-    .greenButton:hover {
-        background: lighten(#78c2d7, 5%);
-    }
+.greenButton:hover {
+    background: lighten(#49595e, 5%);
+    color: rgb(224, 221, 45);
+}
     
-    .greenButton:active {
-        background: darken(#78c2d7, 5%);
-    }
+.greenButton:active {
+    background: darken(#78c2d7, 5%);
+}
 
       
       
       
-    .sellCours >  p {
-        font-size: 12px;
-        font-weight: 400;
-        text-align: left;
-        padding: 2px;
-        margin-left: 20px
-      }
+.sellCours >  p {
+    font-size: 12px;
+    font-weight: 400;
+    text-align: left;
+    padding: 2px;
+    margin: 5px 20px;
+    font-weight: 500;
+    }
   
 @media screen and (max-width: 1024px) {
 
